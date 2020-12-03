@@ -1,0 +1,22 @@
+{
+  "name": "fls-gulp",
+  "version": "1.0.0",
+  "description": "Сборка gulp",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/titov-andrei/fls-gulp.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/titov-andrei/fls-gulp/issues"
+  },
+  "homepage": "https://github.com/titov-andrei/fls-gulp#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
+}
