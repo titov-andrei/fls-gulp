@@ -22,11 +22,19 @@ let path = {
     js: source_folder + "/js/**/*.js",
     img: source_folder + "/img/**/*.{jpg,png,svg,gif,ico,webp}",
   },
-  clean: "./" + project_folder + "/"
+  clean: "./" + project_folder + "/",
 };
 
-let { src, dest } = require('gulp'),
-gulp = require('gulp'),
-browsersync = require("browser-sync").create();
+let { src, dest } = require("gulp"),
+  gulp = require("gulp"),
+  browsersync = require("browser-sync").create();
 
-
+function browserSync(params) {
+  browsersync.init({
+    server: {
+      baseDir: "./" + project_folder + "/"
+    },
+    port: 3000,
+    notify: false
+  })
+}
